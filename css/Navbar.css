@@ -4,7 +4,7 @@
   background: #2f5597; 
 }
 
-/* Navbar section */
+
 .nav-main {
   background: #fff;
   padding: 10px 0; 
@@ -71,4 +71,15 @@
   color: var(--red);
   border-color: var(--red);
   transition: ease-in-out .3s;
+}
+
+@media(max-width:1024px){
+  .nav-middle{
+  /* width: 30px; */
+  display: none;
+}
+
+.nav-left img {
+  height: 20px;
+}
 }
