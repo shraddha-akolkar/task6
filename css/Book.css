@@ -1,0 +1,121 @@
+
+
+
+.specialities {
+  text-align: center;
+}
+
+.speciality-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+}
+
+.spec-card {
+align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 17px 0 #00000024;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    height: 100%;
+    max-height: 200px;
+    padding: 30px 0;
+    transition: all .3s ease;
+}
+
+
+.spec-card img {
+  width: 40px;
+  margin-bottom: 10px;
+  fill: #FFF;
+}
+
+
+
+
+.spec-card p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+
+
+
+.spec-card:hover {
+  transform: translateY(-3px);
+     background: linear-gradient(90deg, #1589c2, #118ecc);
+
+  transition: all .3s ease;
+  color: #FFF;
+}
+
+
+.book-app {
+  display: flex;
+  justify-content: center;
+}
+
+.book-card {
+  background: #f1fafd;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .15));
+  border-radius: 14px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+
+.book-header {
+  display: flex;
+  align-items: center;
+ 
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.book-header img {
+  width: 40px;
+}
+
+.book-header h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.book-card p {
+
+  text-align: left;
+}
+
+
+.book-btn {
+  background: var(--red);
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 30px;
+  border: 1px solid var(--red);
+}
+
+
+.book-btn:hover {
+  background: #fff;
+  color: var(--red);
+  border-color: var(--red);
+  transition: ease-in-out .3s;
+}

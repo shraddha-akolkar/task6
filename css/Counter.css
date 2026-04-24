@@ -1,0 +1,38 @@
+
+
+.counter-box {
+  background: linear-gradient(90deg, #1589c2, #c2202d);
+  border-radius: 20px;
+  padding: 40px 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  flex-wrap: wrap;
+}
+
+
+.counter-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: #fff;
+}
+
+
+.counter-item img {
+  width: 50px;
+}
+
+.text-content {
+  margin-top: 7px;
+}
+.counter-item h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.counter-item p {
+  font-size: 14px;
+  color: #fff;
+}
