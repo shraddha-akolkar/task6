@@ -68,36 +68,4 @@
 
 
 
-@media (max-width: 992px) {
-  .footer-top {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    padding: 15px 30px;
-  }
 
-  .footer-links {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer-cta {
-    flex-direction: column;
-    gap: 10px;
-    height: auto;
-    padding: 10px;
-  }
-
-  .btn {
-    width: 90%;
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 550px) {
-  .footer-top p,
-  .footer-links a {
-    font-size: 12px;
-  }
-}
