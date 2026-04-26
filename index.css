@@ -53,6 +53,7 @@
 body {
   font-family: 'Figtree', sans-serif;
   color: var(--black);
+  overflow-x: hidden;
 }
 
 
@@ -144,6 +145,11 @@ section {
 
 
 @media (max-width: 550px) {
+  .side-space {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
   .section-title {
     font-size: 20px;
   }

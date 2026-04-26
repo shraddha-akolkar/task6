@@ -191,6 +191,11 @@
 
 
 @media (max-width: 550px) {
+  .video-slider,
+  .review-slider {
+    padding: 0;
+  }
+
   .video-slide iframe {
     height: 220px;
   }
