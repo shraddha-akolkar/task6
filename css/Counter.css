@@ -44,7 +44,7 @@
   }
 
   .counter-item {
-    width: calc(50% - 15px); /* 2 items per row */
+    width: calc(50% - 15px);
   }
 }
 

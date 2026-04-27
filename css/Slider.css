@@ -92,6 +92,11 @@
     flex: 0 0 calc(33.33% - 14px);
   }
 
+  .tech-card img {
+   width: 100% !important;
+    height: auto;
+  }
+
   .slider-track {
     gap: 16px;
   }
@@ -100,6 +105,10 @@
 @media (max-width: 992px) {
   .tech-card {
     flex: 0 0 calc(50% - 12px); 
+  }
+   .tech-card img {
+  width: 100% !important;
+    height: auto;
   }
 
   .slider-track {
@@ -112,6 +121,11 @@
     flex: 0 0 100%;
   }
 
+   .tech-card img {
+  width: 100% !important;
+    height: auto;
+  }
+
   .slider-track {
     gap: 12px;
   }
@@ -121,7 +135,10 @@
   .tech-card {
     flex: 0 0 100%;
   }
-
+ .tech-card img {
+   width: 100% !important;
+    height: auto;
+  }
   .slider-track {
     gap: 10px;
   }

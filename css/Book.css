@@ -122,3 +122,50 @@ align-items: center;
   border-color: var(--red);
   transition: ease-in-out .3s;
 }
+
+
+@media (max-width: 1024px) {
+  .speciality-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .speciality-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .speciality-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .spec-card {
+    padding: 20px 10px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .speciality-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .spec-card {
+    flex-direction: row;      
+    justify-content: flex-start;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .spec-card img {
+    margin-bottom: 0;
+  }
+}

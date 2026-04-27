@@ -27,11 +27,14 @@
   align-items: center;
   padding: 18px 20px;
   cursor: pointer;
+  
 }
 
 .faq-question p {
-  font-size: 16px;
+  font-family: 'Figtree', sans-serif;
+  color: var(--black);
   font-weight: 500;
+  font-size: 18px;
 }
 
 
