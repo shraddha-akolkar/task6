@@ -1,46 +1,45 @@
-
-function initTestimonialSlider({ trackId, dotsId, prevBtn, nextBtn }) {
+function simpleSlider(trackId, dotsId, prevBtn, nextBtn) {
   const track = document.getElementById(trackId);
+  const slides = track.children;
   const dotsContainer = document.getElementById(dotsId);
-  const slides = track.querySelectorAll(track.children[0].className ? '.' + track.children[0].className : '*');
-  const total = track.children.length;
+
   let index = 0;
+  const total = slides.length;
 
-
+  
   for (let i = 0; i < total; i++) {
-    const dot = document.createElement('span');
-    if (i === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => goTo(i));
+    const dot = document.createElement("span");
+    if (i === 0) dot.classList.add("active");
+
+    dot.onclick = () => showSlide(i);
     dotsContainer.appendChild(dot);
   }
 
-  function goTo(i) {
+  function showSlide(i) {
     index = i;
     track.style.transform = `translateX(-${index * 100}%)`;
-    dotsContainer.querySelectorAll('span').forEach((d, j) => {
-      d.classList.toggle('active', j === index);
-    });
+
+  
+    const dots = dotsContainer.children;
+    for (let j = 0; j < dots.length; j++) {
+      dots[j].classList.remove("active");
+    }
+    dots[index].classList.add("active");
   }
 
-  document.querySelector(nextBtn).addEventListener('click', () => {
-    goTo(index < total - 1 ? index + 1 : 0);
-  });
+ 
+  document.querySelector(nextBtn).onclick = () => {
+    index = (index + 1) % total;
+    showSlide(index);
+  };
 
-  document.querySelector(prevBtn).addEventListener('click', () => {
-    goTo(index > 0 ? index - 1 : total - 1);
-  });
+ 
+  document.querySelector(prevBtn).onclick = () => {
+    index = (index - 1 + total) % total;
+    showSlide(index);
+  };
 }
 
-initTestimonialSlider({
-  trackId: 'videoTrack',
-  dotsId: 'videoDots',
-  prevBtn: '.vid-prev',
-  nextBtn: '.vid-next'
-});
 
-initTestimonialSlider({
-  trackId: 'reviewTrack',
-  dotsId: 'reviewDots',
-  prevBtn: '.rev-prev',
-  nextBtn: '.rev-next'
-});
+simpleSlider("videoTrack", "videoDots", ".vid-prev", ".vid-next");
+simpleSlider("reviewTrack", "reviewDots", ".rev-prev", ".rev-next");

@@ -31,8 +31,8 @@
 .tech-card h3{
  display: flex;
   flex-direction: column;
-  justify-content: center;   /* ✅ vertical center */
-  align-items: center;       /* ✅ horizontal center */
+  justify-content: center;  
+  align-items: center;    
   text-align: center;
     /* padding: 20px; */
   padding: 20px;
@@ -84,4 +84,45 @@
 
 .next {
   right: 0;
+}
+
+
+@media (max-width: 1024px) {
+  .tech-card {
+    flex: 0 0 calc(33.33% - 14px);
+  }
+
+  .slider-track {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  .tech-card {
+    flex: 0 0 calc(50% - 12px); 
+  }
+
+  .slider-track {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tech-card {
+    flex: 0 0 100%;
+  }
+
+  .slider-track {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .tech-card {
+    flex: 0 0 100%;
+  }
+
+  .slider-track {
+    gap: 10px;
+  }
 }
