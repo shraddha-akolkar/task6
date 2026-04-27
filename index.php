@@ -63,30 +63,30 @@
       <div class="hero-form">
         <h2>Book An Appointment</h2>
 
-        <form>
-          <div class="form-group">
-            <label>Name</label>
-            <input type="text" placeholder="Full Name" />
-          </div>
+       <form action="send-mail.php" method="POST">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" name="name" placeholder="Full Name" required />
+  </div>
 
-          <div class="form-group">
-            <label>Phone Number</label>
-            <input type="text" placeholder="Phone Number" />
-          </div>
+  <div class="form-group">
+    <label>Phone Number</label>
+    <input type="text" name="phone" placeholder="Phone Number" required />
+  </div>
 
-          <div class="form-group">
-            <label>Select Speciality</label>
-            <select>
-              <option>Select Speciality</option>
-              <option>Cardiology</option>
-              <option>Neurology</option>
-            </select>
-          </div>
+  <div class="form-group">
+    <label>Select Speciality</label>
+    <select name="speciality" required>
+      <option value="">Select Speciality</option>
+      <option value="Cardiology">Cardiology</option>
+      <option value="Neurology">Neurology</option>
+    </select>
+  </div>
 
-          <button type="submit" class="banner-btn">
-            Book An Appointment
-          </button>
-        </form>
+  <button type="submit" class="banner-btn">
+    Book An Appointment
+  </button>
+</form>
       </div>
     </div>
   </section>
