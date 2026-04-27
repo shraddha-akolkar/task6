@@ -56,6 +56,17 @@ align-items: center;
   color: #FFF;
 }
 
+.spec-card.active {
+  transform: translateY(-3px);
+  background: linear-gradient(90deg, #1589c2, #118ecc);
+  color: #fff;
+}
+
+.spec-card.active .spec-icon svg path {
+  fill: #fff;
+  stroke: #fff;
+}
+
 
 .book-app {
   display: flex;
